@@ -106,9 +106,9 @@ def play(board)
   until over?(board) == true
     turn(board)
 end
-if won?(board) == true
+if won?(board)
   puts "Congratulations, #{winner(board)}!"
-elsif draw?(board) == true
+elsif draw?(board)
   puts "Draw"
 end
 end
