@@ -101,3 +101,15 @@ def winner(board)
     board[champion.first]
   end
 end
+
+def play(board)
+  counter = 0
+  while over?(board) == false
+  turn(board)
+  counter += 1
+end
+if won?(board) == true
+  puts "Congratulations, '#{winner(board)}'!"
+elsif draw?(board) == true
+  puts "Draw"
+end
