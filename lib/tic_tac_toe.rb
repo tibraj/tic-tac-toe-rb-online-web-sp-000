@@ -113,3 +113,4 @@ if won?(board) == true
 elsif draw?(board) == true
   puts "Draw"
 end
+end
