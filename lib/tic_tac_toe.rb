@@ -77,3 +77,9 @@ def won?(board)
     position_taken?(board, winning_com[0])
     end
 end
+
+def full?(board)
+  board.all? do |position|
+    position == "X" || position == "O"
+  end
+end
