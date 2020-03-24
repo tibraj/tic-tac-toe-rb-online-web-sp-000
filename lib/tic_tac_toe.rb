@@ -69,3 +69,11 @@ def current_player(board)
     "O"
   end
 end
+
+def won?(board)
+  WIN_COMBINATIONS.detect do |winning_com|
+    board[winning_com[0]] == board[winning_com[1]] &&
+    board[winning_com[1]] == board[winning_com[2]] &&
+    position_taken?(board, winning_com[0])
+    end
+end
