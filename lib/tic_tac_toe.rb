@@ -109,6 +109,6 @@ end
 if won?(board)
   puts "Congratulations #{winner(board)}!"
 elsif draw?(board)
-  puts "Draw"
+  puts "Cat's Game!"
 end
 end
